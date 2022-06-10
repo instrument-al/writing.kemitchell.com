@@ -11,6 +11,7 @@ html, body
   margin: 0
   text-align: center
   font-family: "Equity A"
+  font-size: 110%
   line-height: $lineHeight
 
 @media screen
@@ -64,11 +65,11 @@ body > header
 
 @media screen
   body > header, body > main, body > footer
-    max-width: 30rem
+    max-width: 33rem
     box-sizing: border-box
 
   body > main.doublewide
-    max-width: 40rem
+    max-width: 42rem
 
   body > main.multilingual, *[lang=ru]
     font-family: "Noto Serif"
@@ -283,9 +284,10 @@ code
   pre
     background-color: #fdfdfd
 
-blockquote
+blockquote, figure
   border-radius: 1ex 0 1ex 0
-  font-size: 85%
+
+blockquote
   padding: 1rem
   padding: 0.5rem 1rem
   margin-top: 0.5rem
@@ -296,7 +298,7 @@ blockquote
     text-align: right
 
 @media screen
-  blockquote
+  blockquote, figure
     background-color: #fdfdfd
 
 blockquote + blockquote
@@ -334,7 +336,6 @@ del
 
 table
   margin: 0 auto
-  font-size: 85%
   caption
     font-weight: bold
     border-bottom: 1px solid black
@@ -347,13 +348,13 @@ table
     padding-right: 0
 
 .translation
+  width: 100%
   margin-top: 1rem
   caption
     margin-bottom: 1rem
   td, th
-    padding: 0 0.5rem
+    padding: 0.25rem 0.5rem
     width: 50%
-    // font-size: 80%
   tbody tr:last-child
     td, th
       padding-bottom: 1rem
@@ -573,7 +574,6 @@ aside.annotation
 
 figure
   margin: 0.5rem 0
-  border: 1px solid #777
   padding: 1rem
   a[href]
     border: none
